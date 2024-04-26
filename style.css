@@ -217,4 +217,7 @@ form {
   .card {
     padding: 20px;
   }
+  header {
+    padding: 30px 0px
+  }
 }
