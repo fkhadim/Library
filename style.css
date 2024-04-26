@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* general */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,6 +16,8 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+/* header */
+
 header {
   background-color: #fff;
   height: 15vh;
@@ -29,6 +32,8 @@ header {
 h1 {
   text-align: center;
 }
+
+/* add book button */
 
 .add-book:active {
   background-color: black;
@@ -47,6 +52,8 @@ h1 {
   border: 2px solid black;
   border-radius: 5px;
 }
+
+/* book grid and card styling */
 
 .book-grid {
   display: grid;
@@ -67,8 +74,6 @@ h1 {
   gap: 10px;
   border: 2px solid black;
 }
-
-
 
 .card-title {
   font-size: 30px;
@@ -112,26 +117,10 @@ h1 {
   transition-duration: 200ms;
 }
 
-@media (max-width: 640px){
-  .book-grid{
-    grid-template-columns: 1fr;
-  }
-  .card-buttons {
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
-    height: 100%;
-
-  }
-  .card {
-    padding: 20px;
-  }
-}
-
 /* popup form */
 .popup-form {
   position: fixed;
-  background-color: rgb(240, 232, 232);
+  background-color: #ccc;
   display: none; /*switches to display flex in javascript */
   flex-direction: column;
   top: 50%;
@@ -148,6 +137,7 @@ h1 {
   margin-top: 10px;
   margin-right: 10px;
   background-color: red;
+  color: #fff;
   border: none;
   border-radius: 15px;
   border: 1px solid black;
@@ -174,7 +164,7 @@ h1 {
   padding: 5px;
   border-radius: 3px;
   height: 30px;
-  border: 1px solid #ccc;
+  border: 1px solid black;
   font-size: 20px;
 }
 
@@ -187,6 +177,7 @@ h1 {
 
 #read {
   margin-left: 20px;
+  transform: scale(1.8);
 }
 
 form {
@@ -207,4 +198,21 @@ form {
   background-color: black;
   color: #fff;
   transition-duration: 200ms;
+}
+
+/* media queries */
+@media (max-width: 640px){
+  .book-grid{
+    grid-template-columns: 1fr;
+  }
+  .card-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    height: 100%;
+
+  }
+  .card {
+    padding: 20px;
+  }
 }
