@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+li {
+  list-style-type: none;
+}
+
 body {
   background-color: rgb(240, 232, 232);
   font-family: 'Poppins', sans-serif;
@@ -20,6 +24,10 @@ header {
   color: black;
   font-family: 'Poppins', sans-serif;
   font-size: 25px;
+}
+
+h1 {
+  text-align: center;
 }
 
 .add-book:active {
@@ -89,6 +97,7 @@ header {
 .card-buttons button {
   flex: 1;
   height: 25%;
+  max-height: 50px;
   background-color: #fff;
   border: none;
   border: 1px solid black;
@@ -110,11 +119,92 @@ header {
   .card-buttons {
     flex-direction: column;
     align-items: stretch;
-    justify-content: flex-end;
-    max-height: 250px;
+    justify-content: center;
+    height: 100%;
 
   }
   .card {
     padding: 20px;
   }
+}
+
+/* popup form */
+.popup-form {
+  position: fixed;
+  background-color: rgb(240, 232, 232);
+  display: none; /*switches to display flex in javascript */
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid black; 
+  border-radius: 10px;
+}
+
+.cancel {
+  align-self: flex-end;
+  font-size: 20px;
+  padding: 3.5px 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: red;
+  border: none;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.cancel:active {
+  background-color: rgb(175, 13, 13);
+}
+
+.popup-form form ul li label {
+  font-size: 25px;
+}
+
+.popup-form form ul li {
+  margin-bottom: 10px;
+}
+
+.popup-form form ul li label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.popup-form form ul li input {
+  padding: 5px;
+  border-radius: 3px;
+  height: 30px;
+  border: 1px solid #ccc;
+  font-size: 20px;
+}
+
+.popup-form form ul li:nth-child(4) {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#read {
+  margin-left: 20px;
+}
+
+form {
+  padding: 0 30px;
+  padding-bottom: 25px;
+}
+
+.submit {
+  padding: 5px 20px;
+  font-size: 22px;
+  background-color: #fff;
+  border: none;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.submit:active {
+  background-color: black;
+  color: #fff;
+  transition-duration: 200ms;
 }
