@@ -20,7 +20,7 @@ body {
 
 header {
   background-color: #fff;
-  height: 15vh;
+  min-height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -216,8 +216,5 @@ form {
   }
   .card {
     padding: 20px;
-  }
-  header {
-    padding: 30px 0px
   }
 }
