@@ -103,5 +103,5 @@ if(popupForm.style.display === 'flex'){
 }
 
 // example book
-const theHobbit = new Book('The Hobbit', 'George R.R Martin', 576, true);
+const theHobbit = new Book('The Hobbit', 'J.R.R Tolkien', 576, true);
 theHobbit.addCard();
